@@ -95,6 +95,7 @@ class CalendarStrip extends Component {
     shouldAllowFontScaling: PropTypes.bool,
     useNativeDriver: PropTypes.bool,
     upperCaseDays: PropTypes.bool,
+    showDayInitial: PropTypes.bool,
   };
 
   static defaultProps = {
@@ -120,6 +121,7 @@ class CalendarStrip extends Component {
     useNativeDriver: true,
     scrollToOnSetSelectedDate: true,
     upperCaseDays: true,
+    showDayInitial: false
   };
 
   constructor(props) {
@@ -450,6 +452,7 @@ class CalendarStrip extends Component {
       marginHorizontal: this.state.marginHorizontal,
       allowDayTextScaling: this.props.shouldAllowFontScaling,
       upperCaseDays: this.props.upperCaseDays,
+      showDayInitial: this.props.showDayInitial
     }
   }
 
